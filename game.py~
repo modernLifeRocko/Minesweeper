@@ -65,8 +65,8 @@ class Board:
     for i in range(self.size):
       col = map(lambda x: x[i], show_board)
       widths.append(len(max( [*col,str(i)], key = len) ))
-    head_width = len(str(self.size)) + 1
-    head_format = '%' + str(head_width) + "s"
+    head_width = len(str(self.size))
+    head_format = '%' + str(head_width+1) + "s"
     #create the str representation of the board
     
     board_str =''
